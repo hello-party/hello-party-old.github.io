@@ -331,8 +331,8 @@ p > img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  font-family: 'Courier', monospace;
+  font-size: 0.8em;
 
   @include mobile {
     float: none;
