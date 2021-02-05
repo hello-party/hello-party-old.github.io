@@ -354,10 +354,11 @@ p > img {
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: .6em;
+  font-size: .8em;
 
   @include mobile {
     margin: 3px 0;
+    font-size: .8em;
   }
 }
 
