@@ -345,7 +345,7 @@ nav {
     font-size: 16px;
   }
 
-  a {
+  a:link, a:hover, a:visited, a:active {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
@@ -354,7 +354,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $darkGray;
     }
   }
 }
