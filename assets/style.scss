@@ -194,6 +194,7 @@ a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
+  border-bottom: 1px dotted $blue;
   &:hover, &:active {
     color: $blue;
   }
