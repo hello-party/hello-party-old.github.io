@@ -726,13 +726,14 @@ Modules - reusable parts of our design
 }
 
 .post-tags a {
-  font-size: 14.5px;
-  padding: 2px 13px;
+  font-size: 0.75em;
+  padding: 2px 13px 1px 13px;
   border: none;
   background-color: #6272a4;
   border-radius: 50px;
   color: #fff;
-  font-family: $sans;
+  font-family: $mono;
+  text-transform: uppercase;
 }
 
 .pagination a, .pagination span {
