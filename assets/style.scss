@@ -397,9 +397,11 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
-	  a {padding: 2px 5px;
-	     background: #C0C0C0;}
-	}
+}
+
+  a.read-more {
+     padding: 2px 5px;
+     background: #F1F1F1;}
 }
 
 .wrapper-container {
