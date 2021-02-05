@@ -37,7 +37,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $sans;
   color: $darkerGray;
   font-weight: bold;
 
@@ -311,7 +311,7 @@ p > img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $sans;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -335,7 +335,7 @@ p > img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: 'Courier', monospace;
+  font-family: $mono;
   font-size: 0.8em;
 
   @include mobile {
@@ -382,7 +382,8 @@ nav {
     font-size: 22px;
     font-style: italic;
     background-color: #ede1ff;
-  }
+    font-family:$serif;
+}
 
   .you-may-like{
     margin: 1.8em .8em;
@@ -401,7 +402,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
-    font-family: 'Courier', monospace;
+    font-family: $mono;
 }
 
   a.read-more {
@@ -454,7 +455,7 @@ body:after {
 }
 
 .post h1{
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $sans;
   text-align: center;
   font-weight: bold;
   font-kerning: auto;
@@ -463,7 +464,7 @@ body:after {
 }
 
 .page h1{
-  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $sans;
   text-align: center;
   font-weight: bold;
   font-kerning: auto;
@@ -485,7 +486,7 @@ body:after {
 .cd-container a {
   color: #30434e;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: $sans;
 }
 
 .cd-container img {
@@ -493,7 +494,7 @@ body:after {
 }
 
 .cd-container h1, .cd-container h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: $sans;
   font-weight: bold;
 }
 
@@ -639,7 +640,7 @@ Modules - reusable parts of our design
 }
 
 #carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $sans;
   display: inline-block;
   overflow: hidden;
   max-width: 270px;
