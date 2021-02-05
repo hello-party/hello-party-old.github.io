@@ -98,6 +98,20 @@ h4 {
   color: #222;
 }
 
+.post h4 {
+    font-size: .8em;
+    color: #222;
+    font-style: italic;
+    font-family: $mono;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 10px 8px 10px;
+    background: #f1fa8c;
+    border-left: 1px dotted #282a36
+}
+
+
+
 p {
   margin: 15px 0;
 }
