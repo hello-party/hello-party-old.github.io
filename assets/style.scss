@@ -35,6 +35,7 @@ html {
 
 body {
   background: #fff url('../images/back.png') repeat center center;
+  background-attachment: fixed
   font-family: $mono;
   color: #404040;
   line-height: 1.7;
@@ -460,12 +461,12 @@ a.read-more:hover {
   bottom: 0;
   width: 100%;
   height: 89px;
-  background-color: $lightGray;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 5px 0;
   text-align: center;
+  font-size: 0.8em;
 }
 
 body:after {
