@@ -20,7 +20,7 @@ avatar: /images/logo.png
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-#  dribbble:
+#  dribbble: 
 #  email: 
 #  facebook:
 #  flickr:
@@ -28,7 +28,7 @@ footer-links:
 #  instagram:
 #  linkedin: 
 #  pinterest:
-  rss: rss
+#  rss: rss
 #  twitter: 
 #  stackoverflow: 
 #  youtube: # channel/<your_long_string> or user/<user-name>
@@ -76,7 +76,7 @@ kramdown:
       line_numbers: false
     block:
       line_numbers: true
-      start_line: 1
+      start_line: 2
   parse_block_html: true
   
 # Set the Sass partials directory, as we're using @imports
