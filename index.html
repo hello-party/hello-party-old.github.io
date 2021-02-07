@@ -3,11 +3,10 @@ layout: default
 ---
 
 <div class="flex-div">
-
-
     <div class="posts">
       {% if page.url == "/" %}
         {% for post in site.tags.pinned %}
+        <div id="pinned">
           <article class="post">
             <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -17,6 +16,7 @@ layout: default
 
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More ⟶</a>
           </article>
+        </div>
         {% endfor %}
       {% endif %}
 
