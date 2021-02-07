@@ -69,8 +69,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 1.2em;
-  a:link, a:hover {
-    color: inherit;
+  a, a:link, a:hover {
+    color: #282a36;
     border-bottom: 0px;
   }
 }
