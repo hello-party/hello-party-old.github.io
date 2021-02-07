@@ -60,28 +60,16 @@
             </div>  
     {% endfor %}
 {% endif %}
-        
-
-{% for post in site.tags.pinned %}
-     <!-- Renders all the pinned posts -->
-{% endfor %}
-
-{% for post in paginator.posts %}
-    {% unless post.tags contains 'pinned' %}
+                    
+    <!-- all titles
+    <ul>
+      {% for post in site.posts %}	
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}	
+    </ul>
+    -->
+          
         {{ content }}
-    {% endunless %}
-{% endfor %}
-          
-          
-          <!-- all titles
-<ul>
-{% for post in site.posts %}	
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}	
-</ul>
--->
-          
-   <!--  {{ content }} -->       
           
        
         </div>
