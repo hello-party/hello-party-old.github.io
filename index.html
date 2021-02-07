@@ -3,21 +3,7 @@ layout: default
 ---
 
 <div class="flex-div">
-  <div class="post detailed flex-left">
-    {% if page.url == "/" %}
-      <div class="grid-container">
-        {% for article in site.top_articles %}
-          <div class="row">
-            <a href="{{article.url}}" class="top-articles-link">
-              <article class="column">
-                {{article.title}}
-              </article>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
+
 
     <div class="posts">
       {% if page.url == "/" %}
