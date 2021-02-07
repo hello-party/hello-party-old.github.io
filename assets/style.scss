@@ -23,6 +23,16 @@
 
 // Syntax highlighting @import is at the bottom of this file
 
+
+div#deadpixel {
+    width: 1px;
+    height: 1px;
+    background: #ef00ff;
+    position: absolute;
+    top: 140px;
+    left: 200px;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
