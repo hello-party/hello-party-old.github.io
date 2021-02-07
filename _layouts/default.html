@@ -39,7 +39,7 @@
 
       <div class="wrapper-main">
         <div id="main" role="main" class="container">
-<!-- Pinned Posts        
+<!-- Pinned Posts -->
 {% if page.url == "/" %}
     {% for post in site.tags.pinned %}
 <div id="pinned">
@@ -60,32 +60,8 @@
             </div>  
     {% endfor %}
 {% endif %}
-End of Pinned Posts -->
-
-{% if page.url == "/" %}
-    {% for post in site.categories.sticky %}
-<div id="pinned">
-          <article class="post">
-                <a href="{{ site.baseurl }}{{ post.url }}">
-                  <h1>{{ post.title }}</h1>
-                </a>
-            <div class="entry">
-                <p>
-                    {{ post.excerpt }}
-                </p>
-            </div>
-
-            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
-                // READ MORE
-            </a>
-          </article>
-            </div>  
-    {% endfor %}
-{% endif %}
-          
-          
-          
-          
+<!-- End of Pinned Posts -->
+       
 <!-- All Titles
     <ul>
       {% for post in site.posts %}	
