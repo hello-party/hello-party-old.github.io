@@ -61,6 +61,17 @@
     {% endfor %}
 {% endif %}
         
+
+{% for post in site.tags.pinned %}
+     <!-- Renders all the pinned posts -->
+{% endfor %}
+
+{% for post in paginator.posts %}
+    {% unless post.tags contains 'pinned' %}
+        {{ content }}
+    {% endunless %}
+{% endfor %}
+          
           
           <!-- all titles
 <ul>
@@ -70,9 +81,9 @@
 </ul>
 -->
           
+   <!--  {{ content }} -->       
           
-          
-        {{ content }}
+       
         </div>
       </div>
 
