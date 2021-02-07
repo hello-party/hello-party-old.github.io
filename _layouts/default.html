@@ -43,12 +43,9 @@
 {% if page.url == "/" %}
     {% for post in site.tags.pinned %}
           <article class="post">
-            <h1>
                 <a href="{{ site.baseurl }}{{ post.url }}">
-                    {{ post.title }}
+                  <h1>{{ post.title }}</h1>
                 </a>
-            </h1>
-
             <div class="entry">
                 <p>
                     {{ post.excerpt }}
