@@ -112,7 +112,11 @@ h4 {
     border-radius: 10px;
 }
 
-
+div#pinned {
+    padding: 5px 20px 20px 20px;
+    border-radius: 10px;
+    border: 1px dotted #282a36;
+}
 
 p {
   margin: 15px 0;
