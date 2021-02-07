@@ -35,7 +35,6 @@ layout: default
           {% else %}
             <article class="post">
               <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-<span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
                 <div id="smallCategories">
                           {% if post %}
         {% assign categories = post.categories %}
@@ -45,7 +44,7 @@ layout: default
       {% for category in categories %}
         <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
         
-      {% endfor %}
+      {% endfor %} | <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
                 </div>
               <div class="entry">
                 <p>{{ post.excerpt }}</p>
