@@ -2,48 +2,133 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
+<div class="flex-div">
+  <div class="post detailed flex-left">
+    {% if page.url == "/" %}
+    <div class="featured-articles-container">
+      <h1>⚡ Featured Articles</h1>
 
-       <!-- <div>
-          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
-        </div> -->
-      </a>
-      <div class="entry">
-       {{ post.excerpt }}
+      <div class="grid-container">
+        {% for article in site.top_articles %}
+          <div class="row">
+            <a href="{{article.url}}" class="top-articles-link">
+              <article class="column">
+                {{article.title}}
+              </article>
+            </a>
+          </div>
+        {% endfor %}
       </div>
+    </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"> // Read More</a>
-    </article>
-  {% endfor %}
-
-  <!-- pagination -->
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
+    <div class="additional-links">
+      <div class="grid item-list compact quick-links">
+        <span>
+          <a href="/feed">
+            <span>Subscribe via RSS</span>
+          </a>
+        </span>
+        <span>
+          <a href="/categories">
+            <span>Browse by category</span>
+          </a>
+        </span>
+        <span>
+          <a href="/contact">
+            <span>Get in touch</span>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.youtube.com/c/AmitMerchant" target="_blank">
+            <span>YouTube Channel</span>
+          </a>
+        </span>
+      </div>
+    </div>
     {% endif %}
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span class="webjeda">{{ page }}</span>
-      {% elsif page == 1 %}
-        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    <div class="posts">
+      {% if page.url == "/" %}
+        {% for post in site.tags.pinned %}
+          <article class="post">
+            <p class="pinned-article"><b>📌 Pinned Article</b></p>
+            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+            <div class="entry">
+              <p><span class="post_date"><i>{{ post.date | date: "%B %e, %Y" }}</i></span> — {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+            </div>
+
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More ⟶</a>
+          </article>
+        {% endfor %}
       {% endif %}
-    {% endfor %}
 
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
+      {% assign i = 0 %}
+      {% for post in paginator.posts %}
+        {% unless post.tags contains 'pinned' %}
+          {% if forloop.index == 5 %}
+            <!-- Adspace: an advertisement can be added here. -->
+            <article class="post">
+
+              <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+              <div class="entry">
+                <p><span class="post_date"><i>{{ post.date | date: "%B %e, %Y" }}</i></span> — {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+              </div>
+
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More ⟶</a>
+            </article>
+          {% else %}
+            <article class="post">
+
+              <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+              <div class="entry">
+                <p><span class="post_date"><i>{{ post.date | date: "%B %e, %Y" }}</i></span> — {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+              </div>
+
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More ⟶</a>
+            </article>
+          {% endif %}
+          {% assign i = i | plus:1 %}
+        {% endunless %}
+      {% endfor %}
+      
+      <!-- pagination -->
+      {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+        {% else %}
+          <span>&laquo; Prev</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <span class="webjeda">{{ page }}</span>
+          {% elsif page == 1 %}
+            <a href="/">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+        {% else %}
+          <span>Next &raquo;</span>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
   </div>
+
+  <!-- Levitating next/previous page links -->
+  {% if paginator.previous_page %}
+    <a class="pagination-side next" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><b>Previous page</b></a>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <a class="pagination-side previous" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><b>Next page</b></a>
   {% endif %}
 </div>
