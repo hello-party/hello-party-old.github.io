@@ -161,6 +161,15 @@ details[open] {
     padding: 4px 0px 10px 0px;
 }
 
+table.rouge-table tr, table.rouge-table td {
+    border: 0px;
+    background: #282a36;
+}
+
+td.rouge-gutter.gl {
+    color: #6272a4;
+}
+
 table {
 	padding: 0;
 }
