@@ -20,42 +20,16 @@ layout: default
         {% endfor %}
       </div>
     </div>
-
-    <div class="additional-links">
-      <div class="grid item-list compact quick-links">
-        <span>
-          <a href="/feed">
-            <span>Subscribe via RSS</span>
-          </a>
-        </span>
-        <span>
-          <a href="/categories">
-            <span>Browse by category</span>
-          </a>
-        </span>
-        <span>
-          <a href="/contact">
-            <span>Get in touch</span>
-          </a>
-        </span>
-        <span>
-          <a href="https://www.youtube.com/c/AmitMerchant" target="_blank">
-            <span>YouTube Channel</span>
-          </a>
-        </span>
-      </div>
-    </div>
     {% endif %}
 
     <div class="posts">
       {% if page.url == "/" %}
         {% for post in site.tags.pinned %}
           <article class="post">
-            <p class="pinned-article"><b>📌 Pinned Article</b></p>
             <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
             <div class="entry">
-              <p><span class="post_date"><i>{{ post.date | date: "%B %e, %Y" }}</i></span> — {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+              <p><span class="post_date"></span> — {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
             </div>
 
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More ⟶</a>
@@ -67,13 +41,12 @@ layout: default
       {% for post in paginator.posts %}
         {% unless post.tags contains 'pinned' %}
           {% if forloop.index == 5 %}
-            <!-- Adspace: an advertisement can be added here. -->
             <article class="post">
 
               <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
               <div class="entry">
-                <p><span class="post_date"><i>{{ post.date | date: "%B %e, %Y" }}</i></span> — {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+                <p><span class="post_date"></span> — {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
               </div>
 
               <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More ⟶</a>
