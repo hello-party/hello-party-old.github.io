@@ -242,6 +242,9 @@ a {
   &:hover, &:active {
     color: $blue;
   }
+a:focus {
+    background: yellow!important;
+}
 }
 .entry a:hover {
    box-shadow: 0px -10px 0px #8be9fd50 inset;
