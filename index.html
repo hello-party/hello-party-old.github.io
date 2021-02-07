@@ -14,7 +14,7 @@ layout: default
               <p>{{ post.excerpt }}</p>
             </div>
 
-            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More ⟶</a>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
           </article>
         </div>
         {% endfor %}
@@ -41,12 +41,15 @@ layout: default
             <article class="post">
 
               <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+                <div id="smallCategories">
+                    {% for category in site.categories %}
+                    {{ post.category }}
+                    {% endfor %}
+                </div>
               <div class="entry">
                 <p>{{ post.excerpt }}</p>
               </div>
-
-              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More ⟶</a>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
             </article>
           {% endif %}
           {% assign i = i | plus:1 %}
