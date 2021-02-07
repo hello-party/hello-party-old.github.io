@@ -29,7 +29,7 @@ layout: default
               <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
                 <div id="smallCategories">
                     {% for category in site.categories %}
-                    <a href="{{category.url}}"><strong>{{category|first}}</strong></a></li>
+                    <li><a href="{{category.url}}"><strong>{{category|first}}</strong></a></li>
                     {% endfor %}
                 </div>
               <div class="entry">
