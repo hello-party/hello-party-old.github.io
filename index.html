@@ -26,9 +26,7 @@ layout: default
           {% if forloop.index == 5 %}
             <article class="post">
                 <div id="smallCategories">
-                    {% for category in site.categories %}
                     {{ post.category }}
-                    {% endfor %}
                 </div>
               <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
               <div class="entry">
@@ -42,9 +40,7 @@ layout: default
 
               <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
                 <div id="smallCategories">
-                    {% for category in site.categories %}
                     {{ post.category }}
-                    {% endfor %}
                 </div>
               <div class="entry">
                 <p>{{ post.excerpt }}</p>
