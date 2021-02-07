@@ -151,11 +151,13 @@ p {
 }
 
 details {
+    border-top: 1px dotted #000;
+    border-bottom: 1px dotted #000;
     margin-top: 25px;
 }
 
 details[open] {
-    background: #f1f1f1;
+    padding: 20px 0px 30px 0px;
 }
 
 table {
