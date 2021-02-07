@@ -69,8 +69,18 @@
     </ul>
     -->
           
-        {{ content }}
+<!--        {{ content }} -->
           
+          
+          {% for post in site.tags.pinned %}
+     <!-- Renders all the pinned posts -->
+{% endfor %}
+
+{% for post in paginator.posts %}
+    {% unless post.tags contains 'pinned' %}
+        <!-- Renders all the posts except pinned -->
+    {% endunless %}
+{% endfor %}
        
         </div>
       </div>
