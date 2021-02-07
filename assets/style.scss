@@ -151,14 +151,14 @@ p {
 }
 
 details {
-    border-top: 1px dotted #000;
-    border-bottom: 1px dotted #000;
+    border-top: 4px double #282a36;
+    border-bottom: 4px double #282a36;
     margin-top: 25px;
     padding-top: 4px;
 }
 
 details[open] {
-    padding: 4px 0px 30px 0px;
+    padding: 4px 0px 10px 0px;
 }
 
 table {
