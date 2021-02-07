@@ -40,6 +40,31 @@
       <div class="wrapper-main">
         <div id="main" role="main" class="container">
           
+{% if page.url == "/" %}
+    {% for post in site.tags.pinned %}
+          <article class="post">
+            <p class="pinned-article"><b>📌 Pinned Article</b></p>
+
+            <h1>
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h1>
+
+            <div class="entry">
+                <p>
+                    {{ post.excerpt }}
+                </p>
+            </div>
+
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
+                Read More ⟶
+            </a>
+          </article>
+    {% endfor %}
+{% endif %}
+          
+          
           <!-- all titles
 <ul>
 {% for post in site.posts %}	
