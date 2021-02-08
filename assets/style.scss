@@ -41,11 +41,11 @@ div#deadpixel {
 html {
   font-size: 100%;
   height: 100%;
+  background: $black;
 }
 
 body {
-  background: $lightwhite url('../images/back.png') repeat center center;
-  background-attachment: fixed;
+  background: $lightwhite;
   font-family: $mono;
   color: $black;
   line-height: 1.7;
@@ -501,6 +501,8 @@ a.read-more:hover {
 }
 
 .wrapper-container {
+  background: $lightwhite url('../images/back.png') repeat center center;
+  background-attachment: fixed;
   min-height: 100%;
   position: relative;
   margin-bottom:-75px;
