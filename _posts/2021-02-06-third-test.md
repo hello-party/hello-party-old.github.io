@@ -2,6 +2,7 @@
 layout: post
 title: Third test post
 categories: [Testing]
+description: a test page to see how the og stuff works out.
 ---
 
 This is a third test post. 
