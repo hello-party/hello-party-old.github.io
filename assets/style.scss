@@ -27,7 +27,7 @@
 div#deadpixel {
     width: 1px;
     height: 1px;
-    background: #ef00ff;
+    background: $pink;
     position: fixed;
     top: 140px;
     left: 200px;
@@ -47,7 +47,7 @@ body {
   background: #fff url('../images/back.png') repeat center center;
   background-attachment: fixed;
   font-family: $mono;
-  color: #282a36;
+  color: $black;
   line-height: 1.7;
   font-weight: 400;
   font-size: 1em;
@@ -59,7 +59,7 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  background: #FFF;
+  background: $white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.2em;
   a, a:link, a:hover {
-    color: #282a36;
+    color: $black;
     border-bottom: 0px;
   }
 }
@@ -90,7 +90,7 @@ h2 {
 }
 
 nav a:focus {
-    background: #f1fa8c!important;
+    background: $yellow!important;
 }
 
 @media (min-width: 769px){
@@ -111,24 +111,12 @@ h3 {
 
 h4 {
   font-size: .8em;
-  color: #282a36;
-}
-
-.post h4 {
-    font-size: .8em;
-    color: #222;
-    font-style: italic;
-    font-family: $mono;
-    font-weight: normal;
-    text-align: left;
-    padding: 10px 10px 8px 10px;
-    background-image: linear-gradient(90deg, #f2f8f8, #f2f8f800);
-    border-radius: 10px;
+  color: $black;
 }
 
 div#pinned {
     padding: 0px 0px 20px 0px;
-    border-bottom: 1px dotted #282a36;
+    border-bottom: 1px dotted $black;
 }
 
 div#smallCategories, #smallCategories a {
@@ -140,18 +128,18 @@ div#smallCategories, #smallCategories a {
 }
 
 #smallCategories a {
-    background: #f1f1f1;
+    background: $lightWhite;
     padding: 2px 5px;
-    color: #282a36;
+    color: $black;
     border-radius: 10px;
 }
 
 div#subtitle {
     margin: 20px 0px;
     padding: 10px 10px 6px 10px;
-    background-color: #f1fa8c;
+    background-color: $yellow;
     border-radius: 10px 10px 0px 0px;
-    border-bottom: 1px dotted #282a36;
+    border-bottom: 1px dotted $black;
     font-size: 0.8em;
 }
 
@@ -160,8 +148,8 @@ p {
 }
 
 details {
-    border-top: 1px solid #282a36;
-    border-bottom: 4px double #282a36;
+    border-top: 1px solid $black;
+    border-bottom: 4px double $black;
     margin-top: 25px;
     padding-top: 4px;
 }
@@ -172,7 +160,7 @@ details[open] {
 
 table.rouge-table tr, table.rouge-table td {
     border: 0px;
-    background: #282a36;
+    background: $black;
 }
 
 td.rouge-gutter.gl {
@@ -184,26 +172,26 @@ table {
 }
 
 table tr {
-	border-top: 1px solid #cccccc;
-	background-color: white;
+	border-top: 1px solid $gray;
+	background-color: $white;
 	margin: 0;
 	padding: 0;
 }
 
 table tr:nth-child(2n) {
-	background-color: #f8f8f8;
+	background-color: $lightwhite;
 }
 
 table tr th {
 	font-weight: bold;
-	border: 1px solid #cccccc;
+	border: 1px solid $gray;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
 }
 
 table tr td {
-	border: 1px solid #cccccc;
+	border: 1px solid $gray;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
@@ -235,16 +223,16 @@ table tr td :last-child {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid $lightgray;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: #fff3ff;
+  background-color: $lightwhite;
 }
 
 .share-box {
   font-weight: bold;
-  color: #222;
+  color: $darkerGray;
 }
 
 span[data-pullquote] {
@@ -472,7 +460,7 @@ nav {
     /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
     color: $gray;
-    background-color: #f2f8f8;
+    background-color: $lightwhite;
     border-radius: 10px;
 }
 
@@ -498,14 +486,14 @@ nav {
 
   a.read-more {
      padding: 5px 20px 2px 5px;
-     background: #F1F1F1;
-     color: #282a36;
-     border-bottom: 1px dotted #282a36;}
+     background: $lightwhite;
+     color: $black;
+     border-bottom: 1px dotted $black;}
 }
 
 a.read-more:hover {
-    background: #f1fa8c;
-    color: #282a36;
+    background: $yellow;
+    color: $black;
 }
 
 .wrapper-container {
@@ -541,7 +529,7 @@ body:after {
 }
 
 #bar {
-    background: #282a36;
+    background: $black;
     height: 7px;
     background-size: cover;
     background-position: left 60%;
