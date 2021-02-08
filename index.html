@@ -47,7 +47,7 @@ layout: default
                 </div>
               <div class="entry">
                   {% if post.subtitle %}<div id="subtitle">{{ post.description }}</div>{% endif %}
-                <p>{{ post.excerpt }}</p>
+                <p>{{ post.excerpt | truncate: 156 }}</p>
               </div>
               <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
             </article>
