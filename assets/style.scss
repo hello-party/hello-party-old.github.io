@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  background: #fff url('../images/back.png') repeat center center;
+  background: $lightwhite url('../images/back.png') repeat center center;
   background-attachment: fixed;
   font-family: $mono;
   color: $black;
