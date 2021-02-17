@@ -318,7 +318,8 @@ p > img {
     margin: 0px 0px;
    }
   p > img {
-	  max-width:100%;}
+	max-width:calc(100%);
+	margin: 0 auto!important;}
 }
 
 // Fixes images in popup boxes from Google Translate
