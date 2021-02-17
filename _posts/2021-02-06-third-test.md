@@ -8,7 +8,7 @@ description: a test page to see how the og stuff works out.
 
 ---
 
-This is a third test post. 
+This [is a](https://google.com) third test post. 
 
 Chapter I
 
