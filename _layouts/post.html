@@ -36,6 +36,11 @@ layout: default
         <p>Categories: <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
         {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}<br>
+          
+          {% if page.last_modified_at %}
+    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+    {% endif %}<br>
+          
 {% if post.subtitle %}<div id="subtitle">{{ post.description }}{% endif %}
   </div>    
 
