@@ -43,7 +43,9 @@ layout: default
     {% endif %}    
           
        Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }}<br>
-      {% if post.subtitle %}Summary: {{ post.description }}{% endif %}
+      {% if post.subtitle %}Summary: {{ post.description }}{% endif %}<br>
+          
+{% last_modified_at %}
   </div>    
 
 <!--  <div>
