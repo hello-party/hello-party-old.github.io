@@ -590,6 +590,10 @@ body:after {
   padding: 40px 0px 10px 0px;
 }
 
+.page h2:nth-of-type(1), .post h2:nth-of-type(1) {
+    padding-top: 0px!important;
+}
+
 .author_title{
   text-align: center;
   color: #939aa1;
