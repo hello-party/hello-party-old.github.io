@@ -257,7 +257,7 @@ a {
 
 .entry a {
   color: $black;
-  background: $mutedYellow;
+  background: $blue;
   text-decoration: none;
 	cursor: pointer;
   border-radius: 5px;
@@ -269,7 +269,8 @@ a {
 }
 
 .entry a:hover {
-   background: $darkMutedYellow;
+   background: $comment;
+   color: #FFF;
 }
 
 ul, ol {
