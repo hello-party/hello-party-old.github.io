@@ -556,8 +556,15 @@ body:after {
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
   line-height: 1.2;
+  border-bottom: 1px solid #282a3650;
+  padding: 0px 0px 10px 0px;
 }
 
+.post h1 a {
+  text-decoration:none;
+  border-bottom: 0px;
+}
+	
 .page h1{
   font-family: $sans;
   text-align: center;
