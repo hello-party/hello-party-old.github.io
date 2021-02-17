@@ -40,7 +40,7 @@ layout: default
        Updated: {{ post.last_modified_at | date: "%b %-d, %Y" }}<br>
       {% if post.subtitle %}Summary: {{ post.description }}{% endif %}<br>
           
-{% last_modified_at %}
+{%- page.last_modified_at | date: date_format -%}
   </div>    
 
 <!--  <div>
