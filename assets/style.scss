@@ -313,7 +313,7 @@ p > img {
   border-radius: 8px;
 }
 
-@media (min-width: 769px){
+@media (max-width: 769px){
   article.post.detailed {
     margin: 0px 0px;
    }
