@@ -28,17 +28,17 @@ The vague anxiety hovering over the crowd affected one man so much that he could
 
 When he saw this man coming toward him, the young sailor left his post beside the pilot and walked over to the side of the ship, holding his hat in his hand. He was a tall, slender young man, no more than twenty years old, with dark eyes and hair as black as ebony. His whole manner gave evidence of that calmness and resolution peculiar to those who have been accustomed to facing danger ever since their childhood.
 
-"Ah, it's you, Dantès!" cried the man in the boat. "What's happened? Why does everything look so gloomy on board?"
+>"Ah, it's you, Dantès!" cried the man in the boat. "What's happened? Why does everything look so gloomy on board?"
+>
+>"A great misfortune, Monsieur Morrel!" replied the young man. "We lost our brave Captain Leclère off Civitavecchia."
+>
+>"What about the cargo?" asked the shipowner eagerly.
+>
+>"It arrived safely, Monsieur Morrel, and I think you'll be satisfied on that score, but poor Captain Leclère--"
+>
+>"What happened to him?" asked the shipowner, visibly relieved.
 
-"A great misfortune, Monsieur Morrel!" replied the young man. "We lost our brave Captain Leclère off Civitavecchia."
-
-"What about the cargo?" asked the shipowner eagerly.
-
-"It arrived safely, Monsieur Morrel, and I think you'll be satisfied on that score, but poor Captain Leclère--"
-
-"What happened to him?" asked the shipowner, visibly relieved.
-
-"He died of brain fever, in horrible agony. He's now at rest off the Isle of II Giglio, sewed up in his hammock with one cannon ball at his head and another at his feet." The young man smiled sadly and added, "How ironic-he waged war against the English for ten long years and then died in his bed like anyone else."
+>"He died of brain fever, in horrible agony. He's now at rest off the Isle of II Giglio, sewed up in his hammock with one cannon ball at his head and another at his feet." The young man smiled sadly and added, "How ironic-he waged war against the English for ten long years and then died in his bed like anyone else."
 
 "Well, we're all mortal," said the shipowner, "and the old must make way for the young, otherwise there would be no promotion."
 
