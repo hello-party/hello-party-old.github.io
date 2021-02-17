@@ -66,7 +66,7 @@ body {
 article.post.detailed {
   margin: 0px 25px;
 }
-	
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $mono;
   color: $darkerGray;
@@ -311,6 +311,14 @@ p > img {
   margin: 0px -25px!important;
   max-width: calc(100% + 50px);
   border-radius: 8px;
+}
+
+@media (min-width: 769px){
+  article.post.detailed {
+    margin: 0px 0px;
+   }
+  p > img {
+	  max-width:100%;}
 }
 
 // Fixes images in popup boxes from Google Translate
