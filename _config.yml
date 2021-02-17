@@ -90,10 +90,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-relative-links
-  - jekyll-last-modified-at
- 
-last-modified-at:
-  date-format: '%y-%d-%b'
 
 include: ['_pages']
 
