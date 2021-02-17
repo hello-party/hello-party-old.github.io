@@ -306,7 +306,9 @@ img {
 p > img {
   text-align: center;
   display: block;
-  margin: 0 auto;
+  margin: 0px -25px!important;
+  max-width: calc(100% + 50px);
+  border-radius: 20px;
 }
 
 // Fixes images in popup boxes from Google Translate
