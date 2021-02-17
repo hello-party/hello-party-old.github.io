@@ -47,7 +47,7 @@ layout: default
                 </div>
               <div class="entry">
                   {% if post.subtitle %}<div id="subtitle">{{ post.description }}</div>{% endif %}
-                <p>{{ post.excerpt | strip_html | lstrip | truncate: 228, "..." }}</p>
+                <!--<p>{{ post.excerpt | strip_html | lstrip | truncate: 228, "..." }}</p>-->
               </div>
               <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
             </article>
